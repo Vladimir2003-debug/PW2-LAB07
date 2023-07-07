@@ -16,3 +16,7 @@ class DateExample(models.Model):
 class NullExample(models.Model):
     col=models.CharField(max_length=10, blank=True,null=True)
 
+class Language(models.Model):
+    pass
+class Framework(models.Model):
+    pass
