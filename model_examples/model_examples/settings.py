@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.examples',
     'apps.render_pdf',
+    'apps.send',
 ]
 
 MIDDLEWARE = [
