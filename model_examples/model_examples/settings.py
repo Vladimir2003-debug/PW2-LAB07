@@ -132,11 +132,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email config 
 #
+
+# A partir de django 1.6+ se requiere poner esta linea de codigo 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Como se usa postfix se pude usar el local host para enviar correo
 EMAIL_HOST = 'localhost'
+# El port por defecto para localhost vease la documentacion de django EMAIL_PORT
 EMAIL_PORT = 25
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
+# Para evitar la authenticacion lo mas posible
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = False
 ACCOUNT_EMAIL_VERIFICATION = 'none'
