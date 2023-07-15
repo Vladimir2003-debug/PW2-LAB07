@@ -7,7 +7,6 @@ def index(request):
     message = request.POST['message']
     print(message)
     print(email)
-    """
     send_mail(
         "Hello from Vladimir Company",               # Asunto del email
         message, # Mensaje en el email
@@ -15,7 +14,6 @@ def index(request):
         [email],                  # los correos a los que
         fail_silently=False,
         )
-    """
     return render(request, 'send/index.html')
 
 def index_view(request):
