@@ -3,11 +3,20 @@ from django.core.mail import send_mail
 # Create your views here.
 
 def index(request):
+    email = request.POST['email']
+    message = request.POST['message']
+    print(message)
+    print(email)
+    """
     send_mail(
         "Hello from Vladimir Company",               # Asunto del email
-        "Hello there, this is an automatic message", # Mensaje en el email
+        message, # Mensaje en el email
         "vladimir@unsa.com",                        # El correo que envia
-        ["linoy54385@lukaat.com"],                  # los correos a los que
+        [email],                  # los correos a los que
         fail_silently=False,
         )
+    """
     return render(request, 'send/index.html')
+
+def index_view(request):
+    return render(request, 'index.html',{})
