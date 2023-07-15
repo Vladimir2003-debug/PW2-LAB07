@@ -11,7 +11,7 @@
   <body>
     <div class="login-box">
       <h2>SEND MESSAGE</h2>
-      <form action='send/' method="POST">{% csrf_token%}
+      <form action="send/" method="POST">{% csrf_token%}
         <div class="user-box">
           <input type="text" name="email" required="" />
           <label>EMAIL</label>
@@ -21,7 +21,13 @@
           <label>CONTENT MESSAGE</label>
         </div>
         <div>
-        <input type="submit" name='' value='enviar' />
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEND 
+          </button>
         </div>
       </form>
     </div>
