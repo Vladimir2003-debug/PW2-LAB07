@@ -1,0 +1,29 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>SEND MESSAGE</h2>
+      <form action='send/'>
+        <div class="user-box">
+          <input type="text" name="email" required="" />
+          <label>EMAIL</label>
+        </div>
+        <div class="user-box">
+          <textarea name="" required="message" ></textarea>
+          <label>CONTENT MESSAGE</label>
+        </div>
+        <div>
+        <input type="submit" name='' value='enviar' />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
